@@ -20,7 +20,11 @@
     // Override point for customization after application launch.
     RootTaBarViewController *root = [[RootTaBarViewController alloc]init];
     self.window.rootViewController = root;
-
+    
+    [[UIApplication sharedApplication]setStatusBarStyle:(UIStatusBarStyleLightContent) animated:NO];
+    
+    
+    
     return YES;
 }
 
